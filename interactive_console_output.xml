@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221212 21:28:41.778" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\hicha\.vscode\extensions\robocorp.robotframework-lsp-1.6.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Create Session">
+<arg>usersSession</arg>
+<arg>${BaseURL}</arg>
+<msg timestamp="20221212 21:28:42.825" level="FAIL">No keyword with name 'Create Session' found.</msg>
+<status status="FAIL" starttime="20221212 21:28:42.825" endtime="20221212 21:28:42.825"/>
+</kw>
+<kw name="GET On Session">
+<var>${response}</var>
+<arg>usersSession</arg>
+<arg>api/users/3</arg>
+<status status="NOT RUN" starttime="20221212 21:28:42.827" endtime="20221212 21:28:42.827"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221212 21:28:42.827" endtime="20221212 21:28:42.827"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221212 21:28:42.828" endtime="20221212 21:28:42.828"/>
+</kw>
+<status status="PASS" starttime="20221212 21:28:41.806" endtime="20221212 21:28:46.658"/>
+</kw>
+<status status="PASS" starttime="20221212 21:28:41.806" endtime="20221212 21:28:46.659"/>
+</test>
+<status status="PASS" starttime="20221212 21:28:41.780" endtime="20221212 21:28:46.659"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
